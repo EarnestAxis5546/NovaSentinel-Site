@@ -1,0 +1,16 @@
+{
+    "name": "NovaSentinel",
+    "short_name": "NovaSentinel",
+    "description": "Anti-DDoS system website",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#0d1b2a",
+    "theme_color": "#6b5b95",
+    "icons": [
+        {
+            "src": "../images/favicon.ico",
+            "sizes": "64x64",
+            "type": "image/x-icon"
+        }
+    ]
+}

@@ -1,80 +1,3 @@
-<!-- index.html (Home Page) -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaSentinel - Home</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <!-- Helpful comment: Enhanced home page with modern design. Customize hero image and content. GitHub: https://github.com/EarnestAxis5546 -->
-</head>
-<body>
-    <!-- Navigation Header -->
-    <header class="sticky">
-        <nav class="container">
-            <div class="logo">NovaSentinel</div>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about-project.html">About Project</a></li>
-                <li><a href="about-me.html">About Me</a></li>
-                <li><a href="docs.html">Docs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <h1>NovaSentinel</h1>
-                <p class="tagline">Your Ultimate Anti-DDoS Fortress</p>
-                <div class="cta-buttons">
-                    <a href="https://github.com/EarnestAxis5546/NovaSentinel" class="btn primary">View on GitHub</a>
-                    <a href="docs.html" class="btn secondary">Read Docs</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Short Description -->
-        <section class="description container fade-in">
-            <p>NovaSentinel is a high-performance Anti-DDoS system built in C# on Arch Linux, designed to protect servers and cloud infrastructure from distributed denial-of-service attacks. It ensures minimal latency and maximum uptime.</p>
-        </section>
-
-        <!-- Feature Highlights -->
-        <section class="features container fade-in">
-            <h2>Key Features</h2>
-            <div class="feature-grid">
-                <div class="feature-card">Real-time threat detection</div>
-                <div class="feature-card">Multithreaded packet analysis</div>
-                <div class="feature-card">Advanced mitigation algorithms</div>
-                <div class="feature-card">Lightweight and scalable architecture</div>
-                <div class="feature-card">Optimized for enterprise servers</div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 NovaSentinel. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="https://github.com/EarnestAxis5546" class="social-icon github">GitHub</a></li>
-                <li><a href="https://linkedin.com/in/example" class="social-icon linkedin">LinkedIn</a></li>
-                <li><a href="https://x.com/example" class="social-icon x">X</a></li>
-            </ul>
-        </div>
-    </footer>
-
-    <script src="assets/js/script.js"></script>
-</body>
-</html>
-```
-
-```html
-<!-- about-project.html (About Project Page) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -82,20 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaSentinel - About Project</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <!-- Helpful comment: Enhanced project info with diagram image. Update tech stack or image. GitHub: https://github.com/EarnestAxis5546 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="manifest" href="assets/manifest/site.webmanifest">
+    <!-- Helpful comment: Replit-inspired project page. Add diagram.png. GitHub: https://github.com/EarnestAxis5546 -->
 </head>
-<body>
+<body data-lang="en">
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <select id="languageSelect">
+            <option value="en">English</option>
+            <option value="sv">Svenska</option>
+        </select>
+    </div>
+
     <!-- Navigation Header -->
     <header class="sticky">
         <nav class="container">
             <div class="logo">NovaSentinel</div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-project.html" class="active">About Project</a></li>
-                <li><a href="about-me.html">About Me</a></li>
-                <li><a href="docs.html">Docs</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="nav-link" data-i18n="nav-home">Home</a></li>
+                <li><a href="about-project.html" class="nav-link active" data-i18n="nav-about-project">About Project</a></li>
+                <li><a href="about-me.html" class="nav-link" data-i18n="nav-about-me">About Me</a></li>
+                <li><a href="docs.html" class="nav-link" data-i18n="nav-docs">Docs</a></li>
+                <li><a href="contact.html" class="nav-link" data-i18n="nav-contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -104,45 +37,45 @@
     <main>
         <!-- Detailed Description -->
         <section class="detailed-description container fade-in">
-            <h1>About NovaSentinel</h1>
-            <p>NovaSentinel is an advanced Anti-DDoS system engineered for robust server protection. Built in C# on Arch Linux, it delivers real-time monitoring and mitigation for enterprise-grade security.</p>
+            <h1 data-i18n="about-title">About NovaSentinel</h1>
+            <p data-i18n="about-description">NovaSentinel is a state-of-the-art Anti-DDoS system built in C# on Arch Linux, engineered for unparalleled server protection with real-time monitoring and mitigation.</p>
             
-            <h2>Architecture</h2>
-            <p>The system uses a layered approach: ingress traffic filtering, anomaly detection, and response orchestration. C# powers the core logic for efficiency in multithreaded environments.</p>
+            <h2 data-i18n="architecture-title">Architecture</h2>
+            <p data-i18n="architecture-description">A layered system with ingress traffic filtering, anomaly detection, and response orchestration, powered by C# for multithreaded efficiency.</p>
             
-            <h2>C# Integration</h2>
-            <p>C# with .NET ensures cross-platform compatibility and high-performance networking, optimized for low-latency packet processing.</p>
+            <h2 data-i18n="csharp-title">C# Integration</h2>
+            <p data-i18n="csharp-description">Leverages .NET for cross-platform compatibility and high-performance networking, optimized for low-latency packet processing.</p>
             
-            <h2>Tech Stack</h2>
-            <ul>
-                <li><strong>Redis</strong>: Caching and real-time data storage</li>
-                <li><strong>Envoy</strong>: Proxy for traffic management</li>
-                <li><strong>eBPF</strong>: Kernel-level packet filtering</li>
-                <li><strong>RobustToolbox</strong>: Custom security utilities</li>
-                <li><strong>C# / .NET</strong>: Core development</li>
-                <li><strong>Arch Linux</strong>: Host environment</li>
+            <h2 data-i18n="techstack-title">Tech Stack</h2>
+            <ul class="tech-stack">
+                <li data-i18n="techstack-redis">Redis: Real-time caching</li>
+                <li data-i18n="techstack-envoy">Envoy: Traffic management proxy</li>
+                <li data-i18n="techstack-ebpf">eBPF: Kernel-level packet filtering</li>
+                <li data-i18n="techstack-robusttoolbox">RobustToolbox: Custom security utilities</li>
+                <li data-i18n="techstack-csharp">C# / .NET: Core logic</li>
+                <li data-i18n="techstack-arch">Arch Linux: Host environment</li>
             </ul>
         </section>
 
         <!-- Schematic/Diagram Section -->
         <section class="schematic container fade-in">
-            <h2>Schematic Diagram</h2>
-            <img src="assets/images/diagram.png" alt="NovaSentinel Architecture Diagram" class="diagram">
-            <p>(Replace with actual diagram image in <code>assets/images/diagram.png</code>)</p>
+            <h2 data-i18n="schematic-title">Schematic Diagram</h2>
+            <img src="assets/images/diagram.png" alt="NovaSentinel Architecture" class="diagram">
+            <p>(Replace with actual diagram in <code>assets/images/diagram.png</code>)</p>
             <pre class="ascii-diagram">
-            +-------------------+     +-------------------+
-            |   Inbound Traffic | --> |   Envoy Proxy     |
-            +-------------------+     +-------------------+
-                                           |
-                                           v
-            +-------------------+     +-------------------+
-            |   eBPF Filter     | <-- |   Redis Cache     |
-            +-------------------+     +-------------------+
-                                           |
-                                           v
-            +-------------------+     +-------------------+
-            | C# Core Engine    | --> | Mitigation Output |
-            +-------------------+     +-------------------+
++-------------------+     +-------------------+
+| Inbound Traffic  | --> |   Envoy Proxy     |
++-------------------+     +-------------------+
+                               |
+                               v
++-------------------+     +-------------------+
+|   eBPF Filter     | <-- |   Redis Cache     |
++-------------------+     +-------------------+
+                               |
+                               v
++-------------------+     +-------------------+
+| C# Core Engine    | --> | Mitigation Output |
++-------------------+     +-------------------+
             </pre>
         </section>
     </main>
@@ -150,80 +83,11 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 NovaSentinel. All rights reserved.</p>
+            <p>&copy; 2025 NovaSentinel. <span data-i18n="footer Rights">All rights reserved.</span></p>
             <ul class="social-links">
-                <li><a href="https://github.com/EarnestAxis5546" class="social-icon github">GitHub</a></li>
-                <li><a href="https://linkedin.com/in/example" class="social-icon linkedin">LinkedIn</a></li>
-                <li><a href="https://x.com/example" class="social-icon x">X</a></li>
-            </ul>
-        </div>
-    </footer>
-
-    <script src="assets/js/script.js"></script>
-</body>
-</html>
-```
-
-```html
-<!-- about-me.html (About Me Page) -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaSentinel - About Me</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <!-- Helpful comment: Enhanced personal info. Insert actual photo, name, bio, etc. GitHub: https://github.com/EarnestAxis5546 -->
-</head>
-<body>
-    <!-- Navigation Header -->
-    <header class="sticky">
-        <nav class="container">
-            <div class="logo">NovaSentinel</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-project.html">About Project</a></li>
-                <li><a href="about-me.html" class="active">About Me</a></li>
-                <li><a href="docs.html">Docs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-        <!-- Personal Info -->
-        <section class="personal-info container fade-in">
-            <h1>About Me</h1>
-            <img src="assets/images/placeholder-photo.jpg" alt="Profile Photo" class="profile-photo">
-            <p><strong>Name:</strong> Earnest Riivitse <!-- Insert actual name --></p>
-            <p><strong>Bio:</strong> Dedicated software developer with over 5 years mastering C-family languages, building secure, high-performance solutions on Arch Linux. Passionate about server security and elegant code. <!-- Insert actual bio --></p>
-            <p><strong>Experience:</strong> 5+ years in low-level programming, server security, and Anti-DDoS systems. <!-- Insert actual experience --></p>
-            
-            <h2>Contacts</h2>
-            <ul class="contact-list">
-                <li><strong>Email:</strong> <a href="mailto:example@email.com">example@email.com</a> <!-- Insert actual email --></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/EarnestAxis5546">EarnestAxis5546</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/example">LinkedIn Profile</a> <!-- Insert actual LinkedIn --></li>
-            </ul>
-            
-            <h2>Portfolio / Social Links</h2>
-            <ul class="contact-list">
-                <li><a href="https://github.com/EarnestAxis5546">GitHub Portfolio</a></li>
-                <li><a href="https://x.com/example">X (Twitter)</a> <!-- Insert actual X link --></li>
-            </ul>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 NovaSentinel. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="https://github.com/EarnestAxis5546" class="social-icon github">GitHub</a></li>
-                <li><a href="https://linkedin.com/in/example" class="social-icon linkedin">LinkedIn</a></li>
-                <li><a href="https://x.com/example" class="social-icon x">X</a></li>
+                <li><a href="https://github.com/EarnestAxis5546" class="social-icon github" data-i18n="social-github">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/example" class="social-icon linkedin" data-i18n="social-linkedin">LinkedIn</a></li>
+                <li><a href="https://x.com/example" class="social-icon x" data-i18n="social-x">X</a></li>
             </ul>
         </div>
     </footer>
