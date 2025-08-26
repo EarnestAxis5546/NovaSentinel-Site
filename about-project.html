@@ -1,0 +1,85 @@
+<!-- about-project.html (About Project Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaSentinel - About Project</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Helpful comment: Detailed project info. Update tech stack or diagram as project evolves. GitHub: https://github.com/EarnestAxis5546 -->
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <nav>
+            <div class="logo">NovaSentinel</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-project.html">About Project</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="docs.html">Docs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Detailed Description -->
+        <section class="detailed-description">
+            <h1>About NovaSentinel</h1>
+            <p>NovaSentinel is an advanced Anti-DDoS system engineered for robust server protection. Built primarily in C#, it integrates seamlessly with Arch Linux for optimal performance. The architecture focuses on real-time monitoring and mitigation.</p>
+            
+            <h2>Architecture</h2>
+            <p>The system employs a layered approach: ingress traffic filtering, anomaly detection, and response orchestration. C# handles core logic for efficiency in multithreaded environments.</p>
+            
+            <h2>C# Integration</h2>
+            <p>C# is used for the backend services, leveraging .NET for cross-platform compatibility and high-performance networking.</p>
+            
+            <h2>Tech Stack</h2>
+            <ul>
+                <li>Redis: For caching and real-time data storage</li>
+                <li>Envoy: As a proxy for traffic management</li>
+                <li>eBPF: For kernel-level packet filtering</li>
+                <li>RobustToolbox: Custom toolbox for enhanced security utilities</li>
+                <li>C# / .NET: Core development</li>
+                <li>Arch Linux: Host environment</li>
+            </ul>
+        </section>
+
+        <!-- Schematic/Diagram Section -->
+        <section class="schematic">
+            <h2>Schematic Diagram</h2>
+            <pre>
+            <!-- ASCII Art Placeholder for Diagram -->
+            +-------------------+     +-------------------+
+            |   Inbound Traffic | --> |   Envoy Proxy     |
+            +-------------------+     +-------------------+
+                                           |
+                                           v
+            +-------------------+     +-------------------+
+            |   eBPF Filter     | <-- |   Redis Cache     |
+            +-------------------+     +-------------------+
+                                           |
+                                           v
+            +-------------------+     +-------------------+
+            | C# Core Engine    | --> | Mitigation Output |
+            +-------------------+     +-------------------+
+            <!-- Replace with actual image or more detailed ASCII if needed -->
+            </pre>
+            <p>(Placeholder for visual diagram. Insert image here if available, e.g., <img src="assets/images/diagram.png">)</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 NovaSentinel. All rights reserved.</p>
+        <ul>
+            <li><a href="https://github.com/EarnestAxis5546">GitHub</a></li>
+            <!-- Insert other social links here -->
+        </ul>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

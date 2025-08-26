@@ -1,0 +1,152 @@
+/* assets/css/styles.css (Shared CSS File) */
+/* Helpful comment: Basic CSS for clean, modern, responsive design. Adjust colors and styles as needed. */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin-left: 1rem;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Sections */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-buttons .btn {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.primary {
+    background-color: #28a745;
+}
+
+.secondary {
+    background-color: #6c757d;
+}
+
+.description, .features, .detailed-description, .schematic, .personal-info, .docs-links, .code-snippets, .contact-form, .contact-details {
+    margin-bottom: 2rem;
+}
+
+pre {
+    background-color: #eee;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.profile-photo {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer ul {
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero {
+        padding: 2rem 0;
+    }
+}
