@@ -8,6 +8,7 @@
     "hero-tagline": "Din ultimata Anti-DDoS-fästning",
     "cta-github": "Visa på GitHub",
     "cta-docs": "Läs dokumentation",
+    "description-title": "Om NovaSentinel",
     "description": "NovaSentinel är ett högpresterande Anti-DDoS-system byggt i C# på Arch Linux, designat för att skydda servrar och molninfrastruktur från distribuerade överbelastningsattacker med minimal latens och maximal drifttid.",
     "features-title": "Nyckelfunktioner",
     "feature-1": "Realtidshotdetektering",
