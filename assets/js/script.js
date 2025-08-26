@@ -1,14 +1,23 @@
-// assets/js/script.js (Shared JS File)
-// Helpful comment: Basic JS for form submission alert (placeholder). Expand for more functionality, e.g., add smooth scrolling or animations.
+// assets/js/script.js (Enhanced JS File)
+// Helpful comment: Enhanced JS with form handling and fade-in animations. Expand for more interactivity. GitHub: https://github.com/EarnestAxis5546
 
-// Contact Form Submission (Placeholder)
 document.addEventListener('DOMContentLoaded', function() {
+    // Contact Form Submission (Placeholder)
     const form = document.getElementById('contactForm');
     if (form) {
         form.addEventListener('submit', function(event) {
             event.preventDefault();
-            alert('Message sent! (This is a placeholder; implement actual submission via Formspree or backend.)');
+            alert('Message sent! (Placeholder: Use Formspree or a backend for actual submission.)');
             form.reset();
         });
     }
+
+    // Fade-in Animation for Sections
+    const fadeInElements = document.querySelectorAll('.fade-in');
+    fadeInElements.forEach((el, index) => {
+        setTimeout(() => {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+        }, index * 200); // Staggered animation
+    });
 });

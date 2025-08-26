@@ -1,4 +1,3 @@
-<!-- docs.html (Docs Page) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaSentinel - Docs</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- Helpful comment: Documentation links and snippets. Update with actual GitHub paths. GitHub: https://github.com/EarnestAxis5546 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <!-- Helpful comment: Enhanced docs with styled code blocks. Update GitHub links. GitHub: https://github.com/EarnestAxis5546 -->
 </head>
 <body>
     <!-- Navigation Header -->
-    <header>
-        <nav>
+    <header class="sticky">
+        <nav class="container">
             <div class="logo">NovaSentinel</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-project.html">About Project</a></li>
                 <li><a href="about-me.html">About Me</a></li>
-                <li><a href="docs.html">Docs</a></li>
+                <li><a href="docs.html" class="active">Docs</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -26,9 +26,9 @@
     <!-- Main Content -->
     <main>
         <!-- Documentation Links -->
-        <section class="docs-links">
+        <section class="docs-links container fade-in">
             <h1>Documentation</h1>
-            <ul>
+            <ul class="doc-list">
                 <li><a href="https://github.com/EarnestAxis5546/NovaSentinel/blob/main/README.md">README</a></li>
                 <li><a href="https://github.com/EarnestAxis5546/NovaSentinel/blob/main/LICENSE">LICENSE</a></li>
                 <li><a href="https://github.com/EarnestAxis5546/NovaSentinel/blob/main/CONTRIBUTING.md">CONTRIBUTING</a></li>
@@ -36,11 +36,11 @@
         </section>
 
         <!-- Sample Code Snippets -->
-        <section class="code-snippets">
+        <section class="code-snippets container fade-in">
             <h2>Sample Code Snippets</h2>
             
             <h3>C# Example (Packet Analysis)</h3>
-            <pre><code>
+            <pre><code class="language-cs">
 // Example C# snippet for basic packet handling
 using System.Net;
 
@@ -53,7 +53,7 @@ public class PacketAnalyzer {
             </code></pre>
             
             <h3>Config Example (JSON Config)</h3>
-            <pre><code>
+            <pre><code class="language-json">
 {
   "mitigation": {
     "threshold": 1000,
@@ -66,11 +66,14 @@ public class PacketAnalyzer {
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 NovaSentinel. All rights reserved.</p>
-        <ul>
-            <li><a href="https://github.com/EarnestAxis5546">GitHub</a></li>
-            <!-- Insert other social links here -->
-        </ul>
+        <div class="container">
+            <p>&copy; 2025 NovaSentinel. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/EarnestAxis5546" class="social-icon github">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/example" class="social-icon linkedin">LinkedIn</a></li>
+                <li><a href="https://x.com/example" class="social-icon x">X</a></li>
+            </ul>
+        </div>
     </footer>
 
     <script src="assets/js/script.js"></script>

@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaSentinel - Contact</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- Helpful comment: Contact form. This is a placeholder; add backend for actual submission. GitHub: https://github.com/EarnestAxis5546 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <!-- Helpful comment: Enhanced contact form. Add backend or Formspree for submission. GitHub: https://github.com/EarnestAxis5546 -->
 </head>
 <body>
     <!-- Navigation Header -->
-    <header>
-        <nav>
+    <header class="sticky">
+        <nav class="container">
             <div class="logo">NovaSentinel</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-project.html">About Project</a></li>
                 <li><a href="about-me.html">About Me</a></li>
                 <li><a href="docs.html">Docs</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +27,7 @@
     <!-- Main Content -->
     <main>
         <!-- Contact Form -->
-        <section class="contact-form">
+        <section class="contact-form container fade-in">
             <h1>Contact Us</h1>
             <form id="contactForm">
                 <label for="name">Name:</label>
@@ -42,22 +43,27 @@
             </form>
         </section>
 
-        <!-- Map or Details Space -->
-        <section class="contact-details">
+        <!-- Contact Details -->
+        <section class="contact-details container fade-in">
             <h2>Location</h2>
             <p>Sweden, Stockholm <!-- Insert actual details --></p>
-            <!-- Placeholder for map: Embed Google Maps iframe here if desired -->
-            <div id="map-placeholder">Map Placeholder (Insert embed code here, e.g., <iframe src="https://www.google.com/maps/embed?pb=..."></iframe>)</div>
+            <div id="map-placeholder">
+                <!-- Embed Google Maps iframe here, e.g., <iframe src="https://www.google.com/maps/embed?pb=..."></iframe> -->
+                Map Placeholder (Insert embed code for actual map)
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 NovaSentinel. All rights reserved.</p>
-        <ul>
-            <li><a href="https://github.com/EarnestAxis5546">GitHub</a></li>
-            <!-- Insert other social links here -->
-        </ul>
+        <div class="container">
+            <p>&copy; 2025 NovaSentinel. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/EarnestAxis5546" class="social-icon github">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/example" class="social-icon linkedin">LinkedIn</a></li>
+                <li><a href="https://x.com/example" class="social-icon x">X</a></li>
+            </ul>
+        </div>
     </footer>
 
     <script src="assets/js/script.js"></script>

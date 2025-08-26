@@ -1,4 +1,3 @@
-<!-- about-me.html (About Me Page) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaSentinel - About Me</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- Helpful comment: Personal info section. Insert actual data for Name, Photo, Bio, etc. GitHub: https://github.com/EarnestAxis5546 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <!-- Helpful comment: Enhanced personal info. Insert actual photo, name, bio, etc. GitHub: https://github.com/EarnestAxis5546 -->
 </head>
 <body>
     <!-- Navigation Header -->
-    <header>
-        <nav>
+    <header class="sticky">
+        <nav class="container">
             <div class="logo">NovaSentinel</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-project.html">About Project</a></li>
-                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="about-me.html" class="active">About Me</a></li>
                 <li><a href="docs.html">Docs</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -26,38 +26,38 @@
     <!-- Main Content -->
     <main>
         <!-- Personal Info -->
-        <section class="personal-info">
+        <section class="personal-info container fade-in">
             <h1>About Me</h1>
-            <!-- Photo Placeholder -->
-            <img src="assets/images/placeholder-photo.jpg" alt="Profile Photo" class="profile-photo"> <!-- Insert actual photo path -->
-            
+            <img src="assets/images/placeholder-photo.jpg" alt="Profile Photo" class="profile-photo">
             <p><strong>Name:</strong> Earnest Riivitse <!-- Insert actual name --></p>
-            <p><strong>Bio:</strong> I'm a dedicated software developer with 5+ years mastering C-family languages and more, building secure, high-performance solutions on Arch Linux. <!-- Insert actual bio --></p>
-            <p><strong>Experience:</strong> Over 5 years in low-level programming and server security. <!-- Insert actual experience --></p>
+            <p><strong>Bio:</strong> Dedicated software developer with over 5 years mastering C-family languages, building secure, high-performance solutions on Arch Linux. Passionate about server security and elegant code. <!-- Insert actual bio --></p>
+            <p><strong>Experience:</strong> 5+ years in low-level programming, server security, and Anti-DDoS systems. <!-- Insert actual experience --></p>
             
             <h2>Contacts</h2>
-            <ul>
+            <ul class="contact-list">
                 <li><strong>Email:</strong> <a href="mailto:example@email.com">example@email.com</a> <!-- Insert actual email --></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/EarnestAxis5546">EarnestAxis5546</a> <!-- Insert actual GitHub --></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/EarnestAxis5546">EarnestAxis5546</a></li>
                 <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/example">LinkedIn Profile</a> <!-- Insert actual LinkedIn --></li>
             </ul>
             
             <h2>Portfolio / Social Links</h2>
-            <ul>
+            <ul class="contact-list">
                 <li><a href="https://github.com/EarnestAxis5546">GitHub Portfolio</a></li>
                 <li><a href="https://x.com/example">X (Twitter)</a> <!-- Insert actual X link --></li>
-                <!-- Add more links as needed -->
             </ul>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 NovaSentinel. All rights reserved.</p>
-        <ul>
-            <li><a href="https://github.com/EarnestAxis5546">GitHub</a></li>
-            <!-- Insert other social links here -->
-        </ul>
+        <div class="container">
+            <p>&copy; 2025 NovaSentinel. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/EarnestAxis5546" class="social-icon github">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/example" class="social-icon linkedin">LinkedIn</a></li>
+                <li><a href="https://x.com/example" class="social-icon x">X</a></li>
+            </ul>
+        </div>
     </footer>
 
     <script src="assets/js/script.js"></script>
